@@ -1,0 +1,216 @@
+What will be the output after the following code snippet?
+
+tup = (1, 2, 4, 8)
+tup = tup[1:-1]
+tup = tup[1]
+print(tup)
+--------------------------------------------------------------------------------
+What will be the output of the following code?
+
+tup_a = (0, 1, 2)
+tup_b = (2, 3, 4)
+list_c = []
+for el in tup_a:
+        if el not in tup_b:
+                list_c.append(el)
+print(list_c)
+--------------------------------------------------------------------------------
+How many percentage (%) signs will be printed after the following code snippet?
+
+for i in range(2):
+        print ('%')
+else:
+        print('%')
+
+--------------------------------------------------------------------------------
+list1 = [1, 2, 3];
+print(list1[-1]); # Print 3
+print(list1[1:-1]); # Print 2
+print(list1[-3]);  # Print 3
+print(list1[-3:-1]); # Print [1,2]
+--------------------------------------------------------------------------------
+What will be the output of the following code?
+
+def check(x):
+    if (x[0] == x[-1]):
+        return True
+    else:
+        return False
+ 
+print(check([10, 20, 30, 40, 10]))
+print(check([40, 20, 30, 40, 10]))
+--------------------------------------------------------------------------------
+What will be the output when the user provides the number 0?
+
+num = int(input('give a number: '))
+if num > 0:
+    if num < 5:
+        print('1')
+    else:
+        print('2')
+else:
+        if num < -1:
+                print('3')
+        else:
+                print('4')
+
+--------------------------------------------------------------------------------
+What will be the output of the following code snippet?
+
+def func(x):
+        if x:
+                print('1')
+        elif x is False:
+                print('2')
+        else:
+                print('3')
+ 
+func(None)
+
+--------------------------------------------------------------------------------
+What will be the output of the following program when the user enters the letter a?
+
+try:
+  val = int(input('Provide a number: '))
+  print(val/val)
+except TypeError:
+  print('a')
+except ValueError:
+  print('b')
+except ZeroDivisionError:
+  print('c')
+except:
+  print('d')
+
+--------------------------------------------------------------------------------
+What will be the output of the following code snippet?
+
+dict1 = {'one': 1, 'two': 2, 'three': 3};
+dict2 = {'one': 1, 'two': 5, 'four': 8};
+print(dict(dict1)); # {'one': 1, 'two': 2, 'three': 3}
+dict3 = dict(dict1);
+dict4 = dict(dict2);
+print(dict3); # {'one': 1, 'two': 2, 'three': 3}
+print(dict4); # {'one': 1, 'two': 5, 'four': 8}
+dict3.update(dict2);
+dict4.update(dict1);
+print(dict3); # {'one': 1, 'two': 5, 'three': 3, 'four': 8}
+print(dict4); # {'one': 1, 'two': 2, 'four': 8, 'three': 3}
+print(dict3 == dict4)
+--------------------------------------------------------------------------------
+What will be the output of the following code?
+
+def boo(x):
+        if x == 1:
+                return x
+        return x * boo(x-1)
+ 
+print(boo(3))
+--------------------------------------------------------------------------------
+What will be the output of the following snippet?
+
+def show_truth():
+    mysterious_var = ['New Surprise!']
+    print(mysterious_var)
+ 
+mysterious_var = ['Surprise!']
+print(mysterious_var)
+show_truth()
+print(mysterious_var)
+--------------------------------------------------------------------------------
+What will be the output of the following code?
+
+for a in range(1, 3):
+        for b in range(1, 3):
+                if a > b:
+                        continue
+                else:
+                        print(a * b)
+--------------------------------------------------------------------------------
+What will be the output after the following code snippet?
+
+temp = [[3 - i for i in range(2)] for j in range(3)] ;
+print(temp);
+# Equivalent to
+for j in range(3):
+    for i in range(2):
+        print(3-i);
+--------------------------------------------------------------------------------
+What will be the output of the following code?
+
+x = 4
+y = 5
+z = 3
+print(x == y or z)
+--------------------------------------------------------------------------------
+What will be the output after the following code snippet?
+
+age = 30
+new_age = age
+new_age -= 2
+age += 2
+print(age, new_age)
+--------------------------------------------------------------------------------
+What will be the output of the following code?
+
+for i in range(5):
+        print(i, end='-')
+--------------------------------------------------------------------------------
+What will be the output of the following code?
+
+print(1 | 0 ^ 1 & ~0)
+--------------------------------------------------------------------------------
+What will be the output after the user enters 0?
+
+user_input = int(input('What is your value? '))
+print(1/user_input)
+
+0 -> ZeroDivisionError: division by zero
+O -> ValueError: invalid literal for int() with base 10: 'O'
+--------------------------------------------------------------------------------
+What will be the output after the following? print(0o1 + 0b1 + 0x1 + 1)
+# To specify an octal integer, you can use the `0o` prefix followed by the octal digits
+
+--------------------------------------------------------------------------------
+What will be the output of the following code?
+
+if 5 == 5.0:
+        print('yes')
+else:
+        print('no')
+--------------------------------------------------------------------------------
+How many at signs (@) will be printed after the following code snippet?
+
+a = 0
+while a <= 5:
+        a += 2
+        print('@')
+--------------------------------------------------------------------------------
+What will be the output of the following code?
+
+def myfunc():
+        print(num + 1, end='')
+ 
+num = 5
+myfunc()
+print(num)
+--------------------------------------------------------------------------------
+How many times will the x sign be printed?
+
+for a in range(1,3):
+        for b in range(1, 8):
+                if a == b:
+                        print('x')
+
+
+
+
+
+
+
+
+
+
+
+
+
