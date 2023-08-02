@@ -202,7 +202,42 @@ for a in range(1,3):
                 if a == b:
                         print('x')
 
+--------------------------------------------------------------------------------
+Given the following code, what will be the output when the user enters two numbers, first 13 and then 3?
 
+a = int(input('First number: '))
+b = int(input('Second number: '))
+ 
+a = a % b
+b = b % a
+ 
+print(a, b)
+--------------------------------------------------------------------------------
+print(1/2); # 0.5
+print(1//2); # 0
+The division operation (/) always returns a float.
+print(1/1); # 1.0
+
+first_name = 'John'
+print(sep=' - ', 'Your first name is', first_name, 'Welcome!') # SyntaxError: positional argument follows keyword argument
+--------------------------------------------------------------------------------
+x = 0
+y = 1
+print(x ^ y); # Invert of multiple except 0 ^ 0 -> 0
+print(x | y); # OR
+print(x & y); #Multiply
+a = x ^ y
+b = x | y
+c = x & y
+print(a + b + c)
+--------------------------------------------------------------------------------
+# Left shift is 2^1
+print(12 << 1); # 2^1 -> 2 * 12 = 24
+print(12 << 2); # 2^2 -> 4 * 12 = 48
+# Right shift divide by 2 to the near round
+print(12 >> 2); # 12/2 = 6, 6/3 = 2; We do it 2 times as we are right shift >> 2
+print(18 >> 2); # 18/2 = 9, 9/2 = 4;
+print(20 >> 4); # 20/2 = 10; 10/2 = 5, 5/2 = 2, 2/2 = 1; We do it 4 times as we are right shift >> 4
 
 
 
