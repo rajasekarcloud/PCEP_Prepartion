@@ -238,6 +238,33 @@ print(12 << 2); # 2^2 -> 4 * 12 = 48
 print(12 >> 2); # 12/2 = 6, 6/3 = 2; We do it 2 times as we are right shift >> 2
 print(18 >> 2); # 18/2 = 9, 9/2 = 4;
 print(20 >> 4); # 20/2 = 10; 10/2 = 5, 5/2 = 2, 2/2 = 1; We do it 4 times as we are right shift >> 4
+--------------------------------------------------------------------------------
+Variable declared outside the function has scope inside the function.
+
+Variable inside the function is LOCAL - This can be overriden by the keyword called "global".
+Varaible outside the function is GLOBAL.
+
+def show_truth():
+    print(mysterious_var);
+show_truth();
+
+# NameError: name 'mysterious_var' is not defined
+--------------------------------------------------------------------------------
+def show_truth():
+    print(mysterious_var);
+mysterious_var = "Surprise!";
+show_truth();
+
+Variable declared outside the function has scope inside the function.
+--------------------------------------------------------------------------------
+def show_truth():
+    mysterious_var = "New Surprise !!";
+    print(mysterious_var);
+mysterious_var = "Surprise!";
+show_truth();
+print(mysterious_var);
+
+
 
 
 
