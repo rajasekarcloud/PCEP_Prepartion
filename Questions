@@ -268,6 +268,21 @@ print("Hi")print("Bye"); # SyntaxError: invalid syntax
 
 Python cannot have more than one syntax in a line
 
+---------------------------------------------------------------------------------
+
+# Write a function named unique.
+# The function should accept one parameter, which is a list with any number of elements inside.
+# The default value for the parameter should be an empty list ([]).
+# The function should return a new list with all duplicate elements removed. The function should preserve the original order of elements.
+def unique(list):
+    uniq_list=[];
+    for i in list:
+        if i not in uniq_list:
+            uniq_list.append(i);
+    return uniq_list;
+print(unique([1, 1, 4, 5, 1]));
+
+
 
 
 
