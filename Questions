@@ -263,6 +263,10 @@ def show_truth():
 mysterious_var = "Surprise!";
 show_truth();
 print(mysterious_var);
+--------------------------------------------------------------------------------
+print("Hi")print("Bye"); # SyntaxError: invalid syntax
+
+Python cannot have more than one syntax in a line
 
 
 
