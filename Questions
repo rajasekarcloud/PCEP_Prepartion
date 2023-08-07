@@ -290,7 +290,29 @@ print(Age,AGE);
 
 Both the variables are different.
 ---------------------------------------------------------------------------------
+i = 0
+while i <= 10:
+    i += 1
+    if i % 2 == 0:
+        break
+    print('*')
 
+# Output= *
+# In the first iteration, we increase i to 1. The if-condition is not met, so we print a star. 
+# In the second iteration, i = 2, the if-condition is satisfied, so we immediately exit the loop.
+---------------------------------------------------------------------------------
+values = [[3 - x for x in range(2)] for y in range(5)];
+print(values); # [[3, 2], [3, 2], [3, 2], [3, 2], [3, 2]]
+sum = 0.0;
+for row in values:
+    print(row);
+    for cell in row:
+        print(cell);
+        sum += cell
+
+print(sum);
+
+Ans: 25.0
 
 
 
