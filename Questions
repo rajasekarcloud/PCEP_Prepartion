@@ -313,7 +313,41 @@ for row in values:
 print(sum);
 
 Ans: 25.0
+---------------------------------------------------------------------------------
+cities = ['Warsaw', 'Cracow', 'Gdansk', 'Szczebrzeszyn Dolny'];
+print(cities[:]) # Prints entire list
+del(cities[:]); # Deletes entire list
+print(cities[:]) # []
 
+---------------------------------------------------------------------------------
+my_list = [0, 1, 2] * 3 + [0]
+print(my_list);
+print(len(my_list));
+
+# [0, 1, 2, 0, 1, 2, 0, 1, 2, 0]
+# Length: 10
+---------------------------------------------------------------------------------
+What will happen after running the following program?
+
+fav_band = 'Green Day'
+fav_band[6] = 'M'
+# Strings are immutable in Python and you can't change individual characters inside them
+---------------------------------------------------------------------------------
+#Elements separated by commas without square brackets create a tuple in Python.
+numbers = 1, 2, 3;
+print(type(numbers));
+
+<class 'tuple'>
+---------------------------------------------------------------------------------
+vals = (1, 2, 3, 4);
+print(vals[1:-1]); # Starting from index 1 and excluding -1(last element) (2,3) - Tuple
+vals = [1,2,3,4];
+print(vals[1:-1]); # [2,3] List
+vals = vals[1:-1];
+vals = vals[1]; 
+print(vals); # 3
+
+---------------------------------------------------------------------------------
 
 
 
