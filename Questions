@@ -358,6 +358,39 @@ print(1//3*3**0); # 0
 print(3//2); #
 # - and + in the same line. They are same precedence. Start from left to right
 print(4-3//2+1); # 4
+---------------------------------------------------------------------------------
+val =  1_000_000; # Underscores are here to make the number (one million in this case) easier to read.
+print(0%2); #0 # x=0,y=2 if x>y then answer is x
+print(1%2); #1
+print(3%2);
+
+angle=0;
+for i in range(5):
+    if i%2 == 1:
+        angle +=1;
+else:
+    angle-=1;
+print(angle);
+
+# BREAK
+power=1;
+while power < 5:
+    power +=1;
+    print("@",end="");
+    if power == 3:
+        break;
+else:
+    print("@");
+
+#
+answers = (True,False, True);
+print(answers[2:]); # True
+selections = answers[-2:];
+print(selections[-1]); # True
+if selections:
+    print("True");
+
+---------------------------------------------------------------------------------
 
 
 
